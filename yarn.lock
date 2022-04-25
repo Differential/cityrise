@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@amplitude/react-native@^2.11.0":
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/@amplitude/react-native/-/react-native-2.11.0.tgz#ea8a9e14fda5369b37ea5984e6554196ff2d7a4f"
+  integrity sha512-mSnB3FXHo5ajGCx7Xo4OFHlYB7X+Kbh50uazTx/zkcsuqkwqMrC9F2xr4w9O3dE+PC+9dbamccL+vveBID7tbA==
+
 "@apollo/client@3.3.20":
   version "3.3.20"
   resolved "https://registry.yarnpkg.com/@apollo/client/-/client-3.3.20.tgz#8f0935fa991857e9cf2e73c9bd378ad7ec97caf8"
