@@ -25,6 +25,7 @@ import { Onboarding } from '@apollosproject/ui-onboarding';
 import {
   ContentSingleConnected,
   ContentFeedConnected,
+  ScriptureScreenConnected,
   SearchScreenConnected,
   UserSettingsConnected,
   TabsConnected as Tabs,
@@ -134,6 +135,14 @@ const App = () => (
                 stackPresentation: 'push',
               }}
             />
+            <Screen
+              name="Scripture"
+              component={ScriptureScreenConnected}
+              options={{
+                gestureEnabled: true,
+                stackPresentation: 'modal',
+              }}
+            />            
             <Screen name="Search" component={SearchScreenConnected} />
             <Screen
               name="UserSettingsNavigator"
