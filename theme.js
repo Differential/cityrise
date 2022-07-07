@@ -20,6 +20,7 @@ const TABS = {
   Explore: {
     showProfile: true,
     showSearch: true,
+    showTags: true,
   },
   Watch: {
     showProfile: true,
