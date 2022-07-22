@@ -1,10 +1,17 @@
 import ApollosConfig from '@apollosproject/config';
 import Svg, { Path } from 'react-native-svg';
+import { Appearance } from 'react-native';
 import FRAGMENTS from '@apollosproject/ui-fragments';
 import { makeIcon } from '@apollosproject/ui-kit';
 
+const deviceColorScheme = Appearance.getColorScheme();
+
 const THEME = {
-  colors: { primary: '#254385', secondary: '#31529C', tertiary: '#31529C' },
+  colors: {
+    primary: deviceColorScheme === 'light' ? '#254385' : '#bec7da',
+    secondary: '#31529C',
+    tertiary: '#31529C',
+  },
   typography: {},
   overrides: {},
 };
@@ -35,12 +42,7 @@ const TABS = {
 
 const ICONS = {
   BrandIcon: makeIcon(({ size = 32, fill, ...otherProps } = {}) => (
-    <Svg
-      width={size}
-      height={size}
-      viewBox="0 0 24 25"
-      fill="none"
-    >
+    <Svg width={size} height={size} viewBox="0 0 24 25" fill="none">
       <Path
         d="M4.7451 16.6281C4.62484 16.8901 8.26777 18.0389 9.02511 17.463C9.44642 17.1426 9.61853 16.2664 9.75468 15.8036C8.16513 15.8938 4.90648 16.2767 4.7451 16.6281Z"
         fill={fill}
@@ -60,12 +62,7 @@ const ICONS = {
     </Svg>
   )),
   BrandLogo: makeIcon(({ size = 32, fill, ...otherProps } = {}) => (
-    <Svg
-      width={size}
-      height={size}
-      viewBox="0 0 24 25"
-      fill="none"
-    >
+    <Svg width={size} height={size} viewBox="0 0 24 25" fill="none">
       <Path
         d="M4.7451 16.6281C4.62484 16.8901 8.26777 18.0389 9.02511 17.463C9.44642 17.1426 9.61853 16.2664 9.75468 15.8036C8.16513 15.8938 4.90648 16.2767 4.7451 16.6281Z"
         fill={fill}
@@ -83,14 +80,9 @@ const ICONS = {
         fill={fill}
       />
     </Svg>
-  )),  
+  )),
   BrandIconText: makeIcon(({ size = 32, fill, ...otherProps } = {}) => (
-    <Svg
-      width={size}
-      height={size}
-      viewBox="0 0 24 25"
-      fill="none"
-    >
+    <Svg width={size} height={size} viewBox="0 0 24 25" fill="none">
       <Path
         d="M4.7451 16.6281C4.62484 16.8901 8.26777 18.0389 9.02511 17.463C9.44642 17.1426 9.61853 16.2664 9.75468 15.8036C8.16513 15.8938 4.90648 16.2767 4.7451 16.6281Z"
         fill={fill}
